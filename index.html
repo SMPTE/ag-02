@@ -546,25 +546,59 @@
           &lt;description&gt; “-“ &lt;date&gt; [ “(“ &lt;note&gt; “)” ] “.” &lt;extension&gt;
         </code>
         <p>
-          Where:<br>
-          &lt;group&gt; is the Group that authored the document (e.g., TC name, “31FS”)<br>
-          &lt;state&gt; is “WD” | “CD” | “FCD” | “DP”<br>
-          &lt;type&gt; is “ST” | “RP” | “EG” | “RDD” | “AN” | “ER” | “OV” | “AG” see <a href="#sec-document-type">""</a><br>
-          &lt;number&gt; is the SMPTE HQ staff-assigned document number<br>
-          &lt;part&gt; is the optional part number<br>
-          &lt;element&gt; is the optional element letter<br>
-          &lt;description&gt; is a brief indicator of subject, such as an
-          abbreviated name of the document, which is constructed using
-          only alpha characters, digits and "-". The description is a
-          required element of the file name.<br>
-          &lt;date&gt; is the document version date, formatted (“YYYY-MM-DD”)
-          as defined in <a href="#sec-dates">""</a>.<br>
-          &lt;note&gt; is an optional string that can be used to annotate
-          the file contents, e.g., “(clean),” “(markup),” “(package),” or
-          similar information. The &lt;note&gt; shall be constructed using
-          only alpha characters, digits, “-“.<br>
-          &lt;extension&gt; is an approved extension. See
-          <a href="#sec-file-formats">""</a>.
+          Where:
+          <dl>
+            <dt>&lt;group&gt;</dt>
+            <dd>
+              is the Group that authored the document (e.g., TC name,
+              “31FS”)
+            </dd>
+            <dt>&lt;state&gt;</dt>
+            <dd>
+              is “WD” | “CD” | “FCD” | “DP”
+            </dd>
+            <dt>&lt;type&gt;</dt>
+            <dd>
+              is “ST” | “RP” | “EG” | “RDD” | “AN” | “ER” | “OV” |
+              “AG” see <a href="#sec-document-type">""</a>
+            </dd>
+            <dt>&lt;number&gt;</dt>
+            <dd>
+              is the SMPTE HQ staff-assigned document number
+            </dd>
+            <dt>&lt;part&gt;</dt>
+            <dd>
+              is the optional part number
+            </dd>
+            <dt>&lt;element&gt;</dt>
+            <dd>
+              is the optional element letter
+            </dd>
+            <dt>&lt;description&gt;</dt>
+            <dd>
+              is a brief indicator of subject, such as an abbreviated
+              name of the document, which is constructed using only
+              alpha characters, digits and "-". The description is a
+              required element of the file name.
+            </dd>
+            <dt>&lt;date&gt;</dt>
+            <dd>
+              is the document version date, formatted (“YYYY-MM-DD”)
+              as defined in <a href="#sec-dates">""</a>.
+            </dd>
+            <dt>&lt;note&gt;</dt>
+            <dd>
+              is an optional string that can be used to annotate the
+              file contents, e.g., “(clean),” “(markup),” “(package),”
+              or similar information. The &lt;note&gt; shall be
+              constructed using only alpha characters, digits, “-“.
+            </dd>
+            <dt>&lt;extension&gt;</dt>
+            <dd>
+              is an approved extension. See
+              <a href="#sec-file-formats">""</a>.
+            </dd>
+          </dl>
         </p>
         <p class="note">
           The &lt;description&gt; and &lt;note&gt; fields can use CamelCase or
