@@ -142,15 +142,15 @@
           forth. The collection of elements, regardless of formats
           employed, is the "Engineering Document" as a whole, and all
           elements shall be clearly identified in the prose element
-          (see <a href="#sec-elements"></a>). Any change to any
-          element constitutes a change to the Engineering
-          Document. The Project Group and the Technology Committee
-          shall determine the number of elements for publication. The
-          Director of Engineering shall determine the distribution
-          media for all published documents. The format of publication
-          shall alter neither the relevance of, nor the processes that
-          otherwise are required for approval of, an Engineering
-          Document.
+          (see Section <a href="#sec-elements"></a> Elements). Any
+          change to any element constitutes a change to the
+          Engineering Document. The Project Group and the Technology
+          Committee shall determine the number of elements for
+          publication. The Director of Engineering shall determine the
+          distribution media for all published documents. The format
+          of publication shall alter neither the relevance of, nor the
+          processes that otherwise are required for approval of, an
+          Engineering Document.
         </p>
         <p>
           Engineering Document Elements may be packaged as one or more
@@ -169,7 +169,7 @@
         </p>
         <dl>
           <dt>
-            <strong>Prose and Embedded Tables:</strong> .doc and .docx
+            <strong>Prose and Embedded Tables:</strong> doc and .docx
           </dt>
           <dd>
             <p>
@@ -182,7 +182,7 @@
               perfect. To minimize the risk of unintended artifacts,
               conversion between formats is not required.
             </p>
-            <dt><strong>Adobe Acrobat:</strong> .pdf</dt>
+            <dt><strong>Adobe Acrobat</strong> (.pdf)</dt>
           <dd>
             <p>
               Adobe Acrobat files may be contributed but shall be
@@ -239,15 +239,14 @@
             <br>
           </dd>
           <dt>
-            <strong>Drawings:</strong> .vsd, .vsdx, .dwg, and .emf
+            <strong>Drawings:</strong> .vsd, vsdx, .dwg and .emf
           </dt>
           <dd>
             <p>
             </p>
           </dd>
           <dt>
-            <strong>Images:</strong> .jpg, .jpeg, .png, .tif, and
-            .tiff
+            <strong>Images:</strong>
           </dt>
           <dd>
             <p>
@@ -256,7 +255,7 @@
               documents may continue to use .bmp.
             </p>
           </dd>
-          <dt><strong>Media files</strong></dt>
+          <dt><strong>Media files:</strong></dt>
           <dd>
             <p>
               Any audio, video or image media format documented by
@@ -374,13 +373,36 @@
           the document’s root number. The Type Designator shall be as
           follows:
         </p>
+        <div style="padding-left:10%">
+          <dl>
+            <dt>ST</dt><dd>Standard</dd>
+            <dt>RP</dt><dd>Recommended Practice</dd>
+            <dt>EG</dt><dd>Engineering Guideline</dd>
+          </dl>
+        </div>
+        <p>
+          Although they are not Engineering Documents, Registered
+          Disclosure Documents, Advisory Notes, Administrative
+          Guidelines, and Engineering Reports shall bear Type
+          Designators as follows:
+        </p>
+        <div style="padding-left:10%">
+          <dl>
+            <dt>RDD</dt><dd>Registered Disclosure Document</dd>
+            <dt>AN</dt><dd>Advisory Note</dd>
+            <dt>AG</dt><dd>Administrative Guideline</dd>
+            <dt>ER</dt><dd>Engineering Report</dd>
+            <dt>OV</dt><dd>Overview Document (Part 0 document)</dd>
+          </dl>
+        </div>
+<!--
         <table id="table-engineering-document-types" style="width:50%">
           <caption>Engineering Document Type Designators</caption>
           <tr><th style="width:30%">Designator</th><th>Document Type</th></tr>
           <tr><td>ST</td><td>Standard</td></tr>
           <tr><td>RP</td><td>Recommended Practice</td></tr>
           <tr><td>EG</td><td>Engineering Guideline</td></tr>
-        </table>
+       </table>
         <p>
           Although they are not Engineering Documents, Registered
           Disclosure Documents, Advisory Notes, Administrative
@@ -396,6 +418,7 @@
           <tr><td>ER</td><td>Engineering Report</td></tr>
           <tr><td>OV</td><td>Overview Document (Part 0 document)</td></tr>
         </table>
+-->
         <p>
           RDDs and ERs shall be numbered using independent number
           spaces. The numbers shall be assigned by SMPTE Headquarters
@@ -434,7 +457,7 @@
             Document,” which shall describe the relationships among
             the Parts and may describe the relationships of the Parts
             to other Engineering Documents. Part 0 documents are not
-            due process Engineering Documents.
+            due process Engineering Documents;
           </p>
           <P>
             Part 0 documents usually should be prepared by the authors
@@ -492,13 +515,13 @@
       <section id="sec-elements">
         <h3>Elements</h3>
         <p>
-          Non-prose Elements of Engineering Documents (see Section 4
-          Publication Formats and Elements)
-          (see <a href="#sec-formats-elements"></a>) shall be
-          designated using a lower case letter (e.g. 1020a:2009 and
-          1020b:2009). Media such as DVDs, as well as non-PDF formats,
-          shall be clearly marked, as appropriate. The single prose
-          element shall not receive a letter suffix.
+          Non-prose Elements of Engineering Documents
+          (see Section <a href="#sec-formats-elements"></a> Publication
+          Formats and Elements) shall be designated using a lower case
+          letter (e.g. 1020a:2009 and 1020b:2009). Media such as DVDs,
+          as well as non-PDF formats, shall be clearly marked, as
+          appropriate. The single prose element shall not receive a
+          letter suffix.
         </p>
       </section>
 
@@ -551,64 +574,56 @@
         <p>
           File names for due process Engineering Documents should be constructed as follows.
         </p>
-        <pre>
+        <pre style="background-color:transparent; border:none">
 &lt;group&gt; “-“ &lt;state&gt; “-“ &lt;type&gt; “-“ &lt;number&gt; [ “-“ &lt;part&gt; ] [ &lt;element&gt; ] “-“
     &lt;description&gt; “-“ &lt;date&gt; [ “(“ &lt;note&gt; “)” ] “.” &lt;extension&gt;</pre>
         <p>
           Where:
         </p>
-        <dl>
-          <dt>&lt;group&gt;</dt>
-          <dd>
-            is the Group that authored the document (e.g., TC name,
-            “31FS”)
-          </dd>
-          <dt>&lt;state&gt;</dt>
-          <dd>
-            is “WD” | “CD” | “FCD” | “DP”
-          </dd>
-          <dt>&lt;type&gt;</dt>
-          <dd>
-            is “ST” | “RP” | “EG” | “RDD” | “AN” | “ER” | “OV” |
-            “AG” see <a href="#sec-document-type"></a>
-          </dd>
-          <dt>&lt;number&gt;</dt>
-          <dd>
-            is the SMPTE HQ staff-assigned document number
-          </dd>
-          <dt>&lt;part&gt;</dt>
-          <dd>
-            is the optional part number
-          </dd>
-          <dt>&lt;element&gt;</dt>
-          <dd>
-            is the optional element letter
-          </dd>
-          <dt>&lt;description&gt;</dt>
-          <dd>
-            is a brief indicator of subject, such as an abbreviated
-            name of the document, which is constructed using only
-            alpha characters, digits and "-". The description is a
-            required element of the file name.
-          </dd>
-          <dt>&lt;date&gt;</dt>
-          <dd>
-            is the document version date, formatted (“YYYY-MM-DD”)
-            as defined in <a href="#sec-dates"></a>.
-          </dd>
-          <dt>&lt;note&gt;</dt>
-          <dd>
-            is an optional string that can be used to annotate the
-            file contents, e.g., “(clean),” “(markup),” “(package),”
-            or similar information. The &lt;note&gt; shall be
-            constructed using only alpha characters, digits, “-“.
-          </dd>
-          <dt>&lt;extension&gt;</dt>
-          <dd>
-            is an approved extension. See
-            <a href="#sec-file-formats"></a>.
-          </dd>
-        </dl>
+        <p>
+          &lt;group&gt; is the Group that authored the document (e.g.,
+          TC name, “31FS”)
+        </p>
+        <p>
+          &lt;state&gt; is “WD” | “CD” | “FCD” | “DP”
+        </p>
+        <p>
+          &lt;type&gt; is “ST” | “RP” | “EG” | “RDD” | “AN” | “ER” |
+          “OV” | “AG” See section <a href="#sec-document-type"></a>
+          Engineering Document Type
+        </p>
+        <p>
+          &lt;number&gt; is the SMPTE HQ staff-assigned document
+          number
+        </p>
+        <p>
+          &lt;part&gt; is the optional part number
+        </p>
+        <p>
+          &lt;element&gt; is the optional element letter
+        </p>
+        <p>
+          &lt;description&gt; is a brief indicator of subject, such as
+          an abbreviated name of the document, which is constructed
+          using only alpha characters, digits and "-". The description
+          is a required element of the file name.
+        </p>
+        <p>
+          &lt;date&gt; is the document version date, formatted
+          (“YYYY-MM-DD”) as defined in section
+          <a href="#sec-dates"></a> Dates.
+        </p>
+        <p>
+          &lt;note&gt; is an optional string that can be used to
+          annotate the file contents, e.g., “(clean),” “(markup),”
+          “(package),” or similar information. The &lt;note&gt; shall
+          be constructed using only alpha characters, digits, “-“.
+        </p>
+        <p>
+          &lt;extension&gt; is an approved extension. See section
+          <a href="#sec-file-formats"></a>
+          File Formats for Document Submission
+        </p>
         <p class="note">
           The &lt;description&gt; and &lt;note&gt; fields can use CamelCase or
           hyphens as word separators. The Document Editor and Project
@@ -635,12 +650,12 @@
           Elements that are a collection of files shall be aggregated
           into a single file that is a .zip file. The .zip file may
           contain other .zip files if necessary. The file name for the
-          .zip file shall follow the rules outlined in
-          <a href="#sec-elements-one-file"></a>.  The names of the files
-          in the .zip file shall be at the discretion of the Project
-          Group. The Project Group may use the schemes defined in this
-          AG. They should use a scheme that is appropriate for the files
-          in the element.
+          .zip file shall follow the rules outlined in section
+          <a href="#sec-elements-one-file"></a> Elements That Are One
+          File. The names of the files in the .zip file shall be at
+          the discretion of the Project Group. The Project Group may
+          use the schemes defined in this AG. They should use a scheme
+          that is appropriate for the files in the element.
         </p>
       </section>
 
@@ -649,10 +664,10 @@
         <p>
           File names for contributions that are not Engineering
           Documents shall be at the discretion of the individual or
-          group making the contribution. The scheme
-          in <a href="#sec-due-process"></a> should be considered as a
-          useful model. If these rules are used, the &lt;state&gt;
-          should be “C.”
+          group making the contribution. The scheme in Section
+          <a href="#sec-due-process"></a> Due Process Engineering
+          Documents should be considered as a useful model. If these
+          rules are used, the &lt;state&gt; should be “C.”
         </p>
         <p>
           For a new project, the document number and even the project
@@ -684,9 +699,9 @@
       <section id="sec-working-draft">
         <h3>Working Draft Development</h3>
         <p>
-          Section <a href="#sec-style-and-form"></a> of this AG has
-          guidance for the use of templates for new projects,
-          Revisions and Amendments.
+          Section <a href="#sec-style-and-form"></a> Style and Form of
+          this AG has guidance for the use of templates for new
+          projects, Revisions and Amendments.
         </p>
         <p>
           For Revisions the process of converting an old document into
@@ -934,7 +949,8 @@
           participants or the Technology Committee Chair(s) with the
           exception of changing the document status. If new editorial
           issues are found, these should be documented and given to
-          SMPTE HQ (see <a href="#sec-hq-edit"></a>.)
+          SMPTE HQ (see section <a href="#sec-hq-edit"></a> SMPTE HQ
+          Editing Publication Document Package.)
         </p>
       </section>
 
@@ -983,9 +999,9 @@
             material that will be needed to prepare the document and
             its elements for publication and long-term
             maintenance. These documents shall be in the formats
-            described in
-            section <a href="#sec-formats-elements"></a> of this
-            Administrative Guideline.
+            described in section <a href="#sec-formats-elements"></a>
+            Publication Formats and Elements of this Administrative
+            Guideline.
           </li>
           <li>
             A document with notes about any editorial issues
