@@ -2,7 +2,7 @@
 
 _This repository is *public*._
 
-Rendered at [https://smpte.github.io/ag-02](https://smpte.github.io/ag-02/).
+[Rendered document](http://smpte-pub-exp.s3-website-us-west-1.amazonaws.com/ag02/main/)
 
 Please consult [CONTRIBUTING.md](./CONTRIBUTING.md), [CONFIDENTIALITY.md](./CONFIDENTIALITY.md), [LICENSE.md](./LICENSE.md) and
 [PATENTS.md](./PATENTS.md) for important notices.
