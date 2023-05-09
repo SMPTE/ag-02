@@ -5,11 +5,10 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="../tooling/smpte.js"></script>
-  <link rel="stylesheet" href="../tooling/css/smpte.css" />
   <meta itemprop="pubType" content="AG" />
   <meta itemprop="pubNumber" content="02" />
   <meta itemprop="pubState" content="draft" />
-  <meta itemprop="pubDateTime" content="2022-12-06" />
+  <meta itemprop="pubDateTime" content="2023-04-09" />
   <title>Document Naming and Packaging</title>
 </head>
 
@@ -33,12 +32,16 @@
   </section>
 
   <section id="sec-normative-references">
-
     <ul>
       <li><cite id="bib-smpte-standards-operations-manual">SMPTE Standards Operations Manual</cite>
       <a>https://www.smpte.org/about/policies-and-governance</a></li>
+      <li><cite id="bib-iso-directives-part2">ISO/IEC Directives, Part 2</cite>, Principles and rules for the structure and drafting of ISO and IEC documents 
+        <a>https://www.iso.org/sites/directives/current/part2/index.xhtml</a></li>
+      <li><cite id="bib-smpte-ag-03">SMPTE AG-03</cite>, Normative References
+      <a>https://www.smpte.org/about/policies-and-governance</a></li>
+      <li><cite id="bib-iso-8601">ISO 8601</cite> (latest edition), Data elements and interchange formats — Information interchange — Representation of dates and times
+      </li>
     </ul>
-
   </section>
 
   <section id="sec-language">
@@ -54,10 +57,10 @@
     <section id="sec-style-guidelines">
       <h3>Style Guidelines</h3>
       <p>
-        All Engineering Documents should follow the guidelines of the International Organization for Standardization (ISO) Directives with the following exceptions: In the event of a conflict, explicit provisions of <a href="#bib-smpte-standards-operations-manual"></a> and Administrative Guidelines shall prevail. Any variances from the ISO Directives shall be approved by the Director of Engineering or the Standards Vice President.
+        All Engineering Documents should follow the guidelines of the <a href="#bib-iso-directives-part2"></a> with the following exceptions: In the event of a conflict, explicit provisions of <a href="#bib-smpte-standards-operations-manual"></a> and Administrative Guidelines shall prevail. Any variances from the <a href="#bib-iso-directives-part2"></a> shall be approved by the Director of Engineering or the Standards Vice President.
       </p>
       <p>
-        Particular attention should be given to the following annexes of the ISO Directives, Part 2:
+        Particular attention should be given to the following annexes of the <a href="#bib-iso-directives-part2"></a>:
       </p>
       <ul>
         <li>
@@ -81,7 +84,7 @@
     <section id="sec-smpte-templates">
       <h3>SMPTE Templates</h3>
       <p>
-        All new Engineering Documents shall use the appropriate, approved SMPTE template. (See Administrative Guideline <a href="https://www.smpte.org/2020-standard-policies-and-governance">AG-04</a> Engineering Document Templates.) This will ensure proper     revision management through and including final publication. Document templates can be found in the Standards Community document repository.
+        All new Engineering Documents shall use the appropriate, approved SMPTE template. (See <a href="#bib-smpte-ag-04"></a>.) This will ensure proper     revision management through and including final publication. Document templates can be found in the Standards Community document repository.
       </p>
     </section>
 
@@ -91,7 +94,7 @@
         A revision of an Engineering Document may use the original template if the resulting prose is identical to that resulting from use of the current template and the Standards Vice President or Director of Engineering agree to the use of the original publication template.
       </p>
       <p>
-        For a revision of an Engineering Document, the Project Group should start with the Publication Master, which usually can be obtained from SMPTE HQ. The Project Group may, at its discretion, recreate the original document, as published, if an editable master cannot be found. The Project Group is encouraged to follow the ISO Directives but is under no obligation to do so.
+        For a revision of an Engineering Document, the Project Group should start with the Publication Master, which usually can be obtained from SMPTE HQ. The Project Group may, at its discretion, recreate the original document, as published, if an editable master cannot be found. The Project Group is encouraged to follow the <a href="#bib-iso-directives-part2"></a> but is under no obligation to do so.
       </p>
       <p>
         An Amendment shall use the current template.
@@ -105,7 +108,7 @@
     <section id="sec-publication-formats-overview">
       <h3>Publication Formats Overview</h3>
       <p>
-        SMPTE Engineering Documents may be published on paper or in various electronic formats and may comprise one or more separate elements. An Engineering Document always shall include a single prose element and may include other elements such as XML, spreadsheets, media files, and so forth. The collection of elements, regardless of formats employed, is the "Engineering Document" as a whole, and all elements shall be clearly identified in the prose element (see <a href="#sec-elements"></a>). Any change to any element constitutes a change to the Engineering Document. The Project Group and the Technology Committee shall determine the number of elements for publication. The Director of Engineering shall determine the distribution media for all published documents. The format of publication shall alter neither the relevance of, nor the processes that otherwise are required for approval of, an Engineering Document.
+        SMPTE Engineering Documents may be published on paper or in various electronic formats and may comprise one or more separate elements. An Engineering Document always shall include a single prose element and may include other elements such as XML, spreadsheets, media files, and so forth. The collection of elements, regardless of formats employed, is the "Engineering Document" as a whole, and all elements shall be clearly identified in the prose element (see <a href="#sec-elements-ov"></a>). Any change to any element constitutes a change to the Engineering Document. The Project Group and the Technology Committee shall determine the number of elements for publication. The Director of Engineering shall determine the distribution media for all published documents. The format of publication shall alter neither the relevance of, nor the processes that otherwise are required for approval of, an Engineering Document.
       </p>
       <p>
         Engineering Document Elements may be packaged as one or more Elements using ZIP to facilitate the organization and distribution of the component files.
@@ -149,13 +152,13 @@
         <dt>XML</dt>
         <dd>
           <p>
-            Any document conforming to W3C Extensible Markup Language (XML) 1.0 (Fifth Edition) or W3C Extensible Markup Language (XML) 1.1 (Second Edition) may be submitted.
+            Any document conforming to <a href="#bib-w3c-xml"></a> may be submitted.
           </p>
           <p>
             The namespaces of all normative XML elements used in XML documents shall have a corresponding normative reference in the prose.
           </p>
           <p>
-            The file extension shall be ".xml", unless otherwise specified by the defining specification of the document or by an appropriate IANA media type
+            The file extension shall be ".xml", unless otherwise specified by the defining specification of the document or by an appropriate <a href="#bib-iana"></a> media type
             registration.
           </p>
           <p>
@@ -163,13 +166,13 @@
           </p>
           <ul>
             <li>
-              W3C XML Schema Part 1: Structures Second Edition (file extension: .xsd)
+              <a href="#bib-w3c-xsd-1-2e"></a> (file extension: .xsd)
             </li>
             <li>
-              W3C Web Services Description Language (WSDL) 1.1
+              <a href="#bib-w3c-wsdl-11"></a>
             </li>
             <li>
-              XML Metadata Interchange (XMI), any Formally Released Version (<a>http://www.omg.org/spec/XMI/</a>)
+              <a href="#bib-xmi"></a>, any Formally Released Version
             </li>
           </ul>
         </dd>
@@ -211,7 +214,7 @@
   <section id="sec-normative-language-forms">
     <h2>Normative Language Forms</h2>
     <p>
-      Normative information in a SMPTE Engineering Document may take the language form of prose, tables, figures, formal languages (e.g., mathematical formulae, BNF, XML, pseudo code), and other language forms. Mathematical formulae shall follow the definitions documented in ISO 80000-2 when possible. When ISO 80000-2 is not sufficient (e.g., BNF, XML Schema, etc.), a Normative Reference for the mathematical definitions used shall be provided. Such Normative Reference shall comply with the provisions of the <a href="#bib-smpte-standards-operations-manual"></a> and AG-03 Normative References.
+      Normative information in a SMPTE Engineering Document may take the language form of prose, tables, figures, formal languages (e.g., mathematical formulae, BNF, XML, pseudo code), and other language forms. Mathematical formulae shall follow the definitions documented in <a href="#bib-iso-80000-2"></a> when possible. When <a href="#bib-iso-80000-2"></a> is not sufficient (e.g., BNF, XML Schema, etc.), a Normative Reference for the mathematical definitions used shall be provided. Such Normative Reference shall comply with the provisions of the <a href="#bib-smpte-standards-operations-manual"></a> and <a href="#bib-smpte-ag-03"></a>.
     </p>
     <p>
       When language forms other than prose are present, the prose shall state whether the language is normative or informative. Normative provisions shall be enabled explicitly (e.g., "The dimensions of figure 1 shall be used."). The presence of non-prose information without prose conformance language shall be deemed informative.
@@ -221,7 +224,7 @@
   <section id="sec-dates">
     <h2>Dates</h2>
     <p>
-      In accordance with ISO 8601-2004, all dates shall be represented in the form <code>YYYY-MM-DD</code> as numeric digits (e.g. <code>2009-04-23</code> to indicate April 23, 2009).
+      In accordance with <a href="#bib-iso-8601"></a>, all dates shall be represented in the form <code>YYYY-MM-DD</code> as numeric digits (e.g. <code>2009-04-23</code> to indicate April 23, 2009).
     </p>
   </section>
 
@@ -341,7 +344,7 @@
       </section>
     </section>
     
-    <section id="sec-elements">
+    <section id="sec-elements-ov">
       <h3>Elements</h3>
       <p>
         Non-prose Elements of Engineering Documents (see <a href="#sec-formats-elements"></a>) shall be designated using a lower case
@@ -594,7 +597,7 @@
         </li>
       </ul>
       <p>
-        After a successful DP vote the Draft Publication Vote Package documents shall not be edited by the Project Group participants or the Technology Committee Chair(s) with the exception of changing the document status. If new editorial issues are found, these should be documented and given to SMPTE HQ (see <a href="#sec-hq-edit"></a>.)
+        After a successful DP vote the Draft Publication Vote Package documents shall not be edited by the Project Group participants or the Technology Committee Chair(s) with the exception of changing the document status. If new editorial issues are found, these should be documented and given to SMPTE HQ (see <a href="#sec-hq-edit"></a>).
       </p>
     </section>
 
@@ -651,6 +654,25 @@
       Using the content and form of the appropriate Engineering Document packages is recommended.
     </p>
   </section>
+
+  <section id="sec-bibliography">
+    <ul>
+      <li><cite id="bib-smpte-ag-04">SMPTE AG-04</cite>, Engineering Document Templates
+        <a>https://www.smpte.org/about/policies-and-governance</a></li>
+      <li><cite id="bib-w3c-xml">W3C XML 1.0</cite> (latest edition)
+        <a>https://www.w3.org/TR/xml/</a></li>
+      <li><cite id="bib-iana">IANA</cite>
+        <a>https://www.iana.org/</a></li>
+      <li><cite id="bib-w3c-xsd-1-2e">W3C XML Schema Part 1: Structures Second Edition</cite>
+        <a>https://www.w3.org/TR/2004/REC-xmlschema-1-20041028/</a></li>
+      <li><cite id="bib-w3c-wsdl-11">W3C Web Services Description Language (WSDL) 1.1</cite>
+        <a>https://www.w3.org/TR/2001/NOTE-wsdl-20010315</a></li>
+      <li><cite id="bib-xmi">XML Metadata Interchange (XMI)</cite>
+        <a>http://www.omg.org/spec/XMI/</a></li>
+      <li><cite id="bib-iso-80000-2">ISO 80000-2</cite> (latest edition), Quantities and units — Part 2: Mathematics</li>
+    </ul>
+  </section>
+
 </body>
 
 </html>
