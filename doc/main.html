@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script src="../tooling/smpte.js"></script>
+  <script type="module" src="../tooling/smpte.js"></script>
   <meta itemprop="pubType" content="AG" />
   <meta itemprop="pubNumber" content="02" />
   <meta itemprop="pubState" content="draft" />
@@ -35,11 +35,15 @@
     <ul>
       <li><cite id="bib-smpte-standards-operations-manual">SMPTE Standards Operations Manual</cite>
       <a>https://www.smpte.org/about/policies-and-governance</a></li>
+      <li><cite id="bib-html-pub">SMPTE HTML Publication Workflow</cite>
+      <a>https://doc.smpte-doc.org/html-pub/main/</a></li>
       <li><cite id="bib-iso-directives-part2">ISO/IEC Directives, Part 2</cite>, Principles and rules for the structure and drafting of ISO and IEC documents 
         <a>https://www.iso.org/sites/directives/current/part2/index.xhtml</a></li>
       <li><cite id="bib-smpte-ag-03">SMPTE AG-03</cite>, Normative References
       <a>https://www.smpte.org/about/policies-and-governance</a></li>
       <li><cite id="bib-iso-8601">ISO 8601</cite> (latest edition), Data elements and interchange formats — Information interchange — Representation of dates and times
+      </li>
+      <li><cite id="bib-media-types">IANA Media Types</cite> <a>https://www.iana.org/assignments/media-types/media-types.xhtml</a>
       </li>
     </ul>
   </section>
@@ -82,22 +86,21 @@
     </section>
     
     <section id="sec-smpte-templates">
-      <h3>SMPTE Templates</h3>
-      <p>
-        All new Engineering Documents shall use the appropriate, approved SMPTE template. (See <a href="#bib-smpte-ag-04"></a>.) This will ensure proper     revision management through and including final publication. Document templates can be found in the Standards Community document repository.
-      </p>
+      <h3>Document editing</h3>
+      <p>All new Engineering Documents shall use <a href="#bib-html-pub"></a>.</p>
+
+      <p>Prior to being submitted for pre-FCD ballot review, draft Engineering Documents may use other editing formats, as selected by the Project Group.</p>
     </section>
 
     <section id="sec-revisions-and-amendments">
-      <h3>Revisions and Amendments</h3>
+      <h3>Revisions</h3>
       <p>
-        A revision of an Engineering Document may use the original template if the resulting prose is identical to that resulting from use of the current template and the Standards Vice President or Director of Engineering agree to the use of the original publication template.
+        An Engineering Document may be revised in its existing format, with the
+        explicit permission of the Standards Vice President or Director of
+        Engineering.
       </p>
       <p>
         For a revision of an Engineering Document, the Project Group should start with the Publication Master, which usually can be obtained from SMPTE HQ. The Project Group may, at its discretion, recreate the original document, as published, if an editable master cannot be found. The Project Group is encouraged to follow the <a href="#bib-iso-directives-part2"></a> but is under no obligation to do so.
-      </p>
-      <p>
-        An Amendment shall use the current template.
       </p>
     </section>
   </section>
@@ -117,90 +120,48 @@
 
     <section id="sec-file-formats">
       <h3>File Formats for Document Submission</h3>
-      <p>
-        Engineering Documents and other contributed documents shall be submitted to a Technology Committee or its subgroups in a limited set of file formats. The following formats are approved:
-      </p>
-      <dl>
-        <dt>Prose and Embedded Tables:</dt>
-        <dd>
-          <p>
-            doc and .docx
-          </p>
-          <p>
-            Engineering Documents should use Office 2007 formats (.docx) for Prose and tabular documents. Engineering Documents may use Office 2003 formats (.doc) as needed. The Project Group shall determine which format to use on a project-by-project basis. Conversions between Office 2003 and Office 2007 formats are not perfect. To minimize the risk of unintended artifacts, conversion between formats is not required.
-          </p>
-        </dd>
-        <dt>Adobe Acrobat</dt>
-        <dd>
-          <p>
-            (.pdf)
-          </p>
-          <p>
-            Adobe Acrobat files may be contributed but shall be accompanied by editable files for all the elements in the document (prose, tables, drawings, etc.) to permit
-            further revision.
-          </p>
-        </dd>
-        <dt>Spreadsheet:</dt>
-        <dd>
-          <p>
-            .xls and .xlsx
-          </p>
-          <p>
-            The Project Group shall decide which spreadsheet format (.xls or .xlsx) to use for each project. The preferred format is .xlsx.
-          </p>
-        </dd>
-        <dt>XML</dt>
-        <dd>
-          <p>
-            Any document conforming to <a href="#bib-w3c-xml"></a> may be submitted.
-          </p>
-          <p>
-            The namespaces of all normative XML elements used in XML documents shall have a corresponding normative reference in the prose.
-          </p>
-          <p>
-            The file extension shall be ".xml", unless otherwise specified by the defining specification of the document or by an appropriate <a href="#bib-iana"></a> media type
-            registration.
-          </p>
-          <p>
-            Documents conforming to the following XML-based specifications are specifically allowed:
-          </p>
-          <ul>
-            <li>
-              <a href="#bib-w3c-xsd-1-2e"></a> (file extension: .xsd)
-            </li>
-            <li>
-              <a href="#bib-w3c-wsdl-11"></a>
-            </li>
-            <li>
-              <a href="#bib-xmi"></a>, any Formally Released Version
-            </li>
-          </ul>
-        </dd>
-        <dt>Drawings:</dt>
-        <dd>
-          <p>
-            .vsd, vsdx, .dwg and .emf
-          </p>
-        </dd>
-        <dt>Images:</dt>
-        <dd>
-          <p>
-            For new projects .jpg, .jpeg, .png, .tif and .tiff are approved image formats. Revisions of existing documents may continue to use .bmp.
-          </p>
-        </dd>
-        <dt>Media files:</dt>
-        <dd>
-          <p>
-            Any audio, video or image media format documented by SMPTE, whether in an Engineering Document or an RDD, or any other media format that is commonly used, widely available, and appropriate for the user community for which the Engineering Document has been created.
-          </p>
-        </dd>
-        <dt>Other non-prose elements:</dt>
-        <dd>
-          <p>
-            .txt and program source formats
-          </p>
-        </dd>
-      </dl>
+
+      <section id="sec-main-element-formats">
+        <h4>Main element</h4>
+
+        <p>With the exception figures, the main element shall be submitted as a single HTML document, as specified at <a href="#bib-html-pub"></a>.</p>
+
+        <p>Images referenced in the main element shall use one of the following formats:</p>
+
+        <ul>
+          <li><code>image/jpeg</code>, as specified at <a
+          href="#bib-media-types"></a></li>
+          <li><code>image/svg+xml</code>, as specified at <a
+          href="#bib-media-types"></a></li>
+          <li><code>image/png</code>, as specified at <a
+          href="#bib-media-types"></a></li>
+        </ul>
+
+        <p>An editable master shall be provided for each image in a format other
+        than <code>image/svg+xml</code>. The editable master shall be in one of
+        the following formats:</p>
+
+        <ul>
+          <li><code>application/vnd.openxmlformats-officedocument.wordprocessingml.document</code> as specified at <a href="#bib-media-types"></a></li>
+          <li><code>application/vnd.openxmlformats-officedocument.presentationml.presentation</code>,
+          as specified at <a href="#bib-media-types"></a></li>
+          <li><a href="#bib-dwg"></a></li>
+          <li><a href="#bib-vsd"></a></li>
+        </ul>
+      </section>
+
+      <section id="sec-additional-element-formats">
+        <h4>Additional elements</h4>
+
+        <p>Additional elements may be provided in any format that is specified
+        in a Permitted Normative References, as defined in <a
+        href="#bib-smpte-ag-03"></a>, and for which a media type exists, as
+        specified at <a href="#bib-media-types"></a>.</p>
+
+        <p>The file name extension for each additional element shall conform to
+        the convention specified at <a href="#bib-media-types"></a>.</p>
+      </section>
+
     </section>
 
     <section id="sec-hq-guidance">
@@ -244,8 +205,8 @@
       </p>
 
       <figure id="figure-example-document-number">
-        <figcaption>Example Document Number</figcaption>
         <img class="figure" src="media/example-document-number.png">
+        <figcaption>Example Document Number</figcaption>
       </figure>
       
     </section>
@@ -664,6 +625,10 @@
       <li><cite id="bib-xmi">XML Metadata Interchange (XMI)</cite>
         <a>http://www.omg.org/spec/XMI/</a></li>
       <li><cite id="bib-iso-80000-2">ISO 80000-2</cite> (latest edition), Quantities and units — Part 2: Mathematics</li>
+      <li><cite id="bib-dwg">DWG (AutoCAD Drawing) Format Family</cite>
+      <a>https://www.loc.gov/preservation/digital/formats/fdd/fdd000445.shtml</a></li>
+      <li><cite id="bib-vsd">Visio VSDX Drawing File Format</cite>
+      <a>https://www.loc.gov/preservation/digital/formats/fdd/fdd000021.shtml</a></li>
     </ul>
   </section>
 
