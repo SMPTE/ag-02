@@ -7,8 +7,9 @@
   <script type="module" src="../tooling/smpte.js"></script>
   <meta itemprop="pubType" content="AG" />
   <meta itemprop="pubNumber" content="02" />
-  <meta itemprop="pubState" content="draft" />
-  <meta itemprop="pubDateTime" content="2023-06-12" />
+  <meta itemprop="pubState" content="pub" />
+  <meta itemprop="pubStage" content="PUB">
+  <meta itemprop="pubDateTime" content="2025-03-25" />
   <title>Document Naming and Packaging</title>
 </head>
 
@@ -35,12 +36,17 @@
     <ul>
       <li><cite id="bib-smpte-standards-operations-manual">SMPTE Standards Operations Manual</cite>
       <a>https://www.smpte.org/about/policies-and-governance</a></li>
-      <li><cite id="bib-html-pub">SMPTE HTML Publication Workflow</cite>
+      <li><cite id="bib-smpte-ag-03">SMPTE AG-03</cite>, Normative References
+        <a>https://doc.smpte-doc.org/ag-03/main/</a></li>
+      <li><cite id="bib-ag-26">SMPTE AG-26</cite>, HTML Pub: Tooling and documentation for HTML documents
       <a>https://doc.smpte-doc.org/html-pub/main/</a></li>
+      <li><cite id="bib-ag-27">SMPTE AG-27</cite>, HTML Pub: Template (Base HTML Repo with Tooling)
+        <a>https://github.com/SMPTE/html-pub-template</a></li>
+      <li><cite id="bib-ag-28">SMPTE AG-28</cite>, Document Library: Repo Spec (Structure)
+        <a>https://doc.smpte-doc.org/document-repo-spec/main/</a></li>
       <li><cite id="bib-iso-directives-part2">ISO/IEC Directives, Part 2</cite>, Principles and rules for the structure and drafting of ISO and IEC documents 
         <a>https://www.iso.org/sites/directives/current/part2/index.xhtml</a></li>
-      <li><cite id="bib-smpte-ag-03">SMPTE AG-03</cite>, Normative References
-      <a>https://www.smpte.org/about/policies-and-governance</a></li>
+      
       <li><cite id="bib-iso-8601">ISO 8601</cite> (latest edition), Data elements and interchange formats — Information interchange — Representation of dates and times
       </li>
       <li><cite id="bib-media-types">IANA Media Types</cite> <a>https://www.iana.org/assignments/media-types/media-types.xhtml</a>
@@ -87,21 +93,17 @@
     
     <section id="sec-smpte-templates">
       <h3>Document editing</h3>
-      <p>All new Engineering Documents shall use <a href="#bib-html-pub"></a>.</p>
+      <p>All Engineering Documents shall use <a href="#bib-ag-26"></a> and <a href="#bib-ag-27"></a> as of <code>2025-06-01</code>.</p>
 
       <p>Prior to being submitted for pre-FCD ballot review, draft Engineering Documents may use other editing formats, as selected by the Project Group.</p>
-    </section>
+   
 
-    <section id="sec-revisions-and-amendments">
-      <h3>Revisions</h3>
       <p>
-        An Engineering Document may be revised in its existing format, with the
-        explicit permission of the Standards Vice President or Director of
-        Engineering.
+        For a revision of an Engineering Document, if not already published in HTML, the Publication Master can usually can be obtained from SMPTE HQ. The Project Group should recreate the original document, as closely as possible to published, in HTML format as per <a href="#bib-ag-26"></a>, prior to any revision work to be done. This will ensure the tooling can create a proper redline document during the balloting process. 
       </p>
-      <p>
-        For a revision of an Engineering Document, the Project Group should start with the Publication Master, which usually can be obtained from SMPTE HQ. The Project Group may, at its discretion, recreate the original document, as published, if an editable master cannot be found. The Project Group is encouraged to follow the <a href="#bib-iso-directives-part2"></a> but is under no obligation to do so.
-      </p>
+      <p class="note">Care should be given when updating the tooling from prior HTML published versions, as major changes in said tooling may have occured. However, such changes may be required, such as general boiler plate verbiage, template update, and/or validation tools.</p>
+      <p class="note">Since the HTML pipeline has been introduced, amendments are no longer able to be generated, only full revisions. As such, amendments shall no longer be utilized.</p>
+
     </section>
   </section>
 
@@ -111,7 +113,7 @@
     <section id="sec-publication-formats-overview">
       <h3>Publication Formats Overview</h3>
       <p>
-        SMPTE Engineering Documents may be published on paper or in various electronic formats and may comprise one or more separate elements. An Engineering Document always shall include a single prose element and may include other elements such as XML, spreadsheets, media files, and so forth. The collection of elements, regardless of formats employed, is the "Engineering Document" as a whole, and all elements shall be clearly identified in the prose element (see <a href="#sec-elements-ov"></a>). Any change to any element constitutes a change to the Engineering Document. The Project Group and the Technology Committee shall determine the number of elements for publication. The Director of Engineering shall determine the distribution media for all published documents. The format of publication shall alter neither the relevance of, nor the processes that otherwise are required for approval of, an Engineering Document.
+        SMPTE Engineering Documents shall be published in HTML and may comprise one or more separate elements. An Engineering Document always shall include a single prose element and may include other elements such as XML, spreadsheets, media files, and so forth. The collection of elements, regardless of formats employed, is the "Engineering Document" as a whole, and all elements shall be clearly identified in the prose element (see <a href="#sec-elements-ov"></a>). Any change to any element constitutes a change to the Engineering Document. The Project Group and the Technology Committee shall determine the number of elements for publication. The Director of Engineering shall determine the distribution media for all published documents. The format of publication shall alter neither the relevance of, nor the processes that otherwise are required for approval of, an Engineering Document.
       </p>
       <p>
         Engineering Document Elements may be packaged as one or more Elements using ZIP to facilitate the organization and distribution of the component files.
@@ -124,7 +126,7 @@
       <section id="sec-main-element-formats">
         <h4>Main element</h4>
 
-        <p>With the exception of figures, the main element shall be submitted as a single HTML document, as specified at <a href="#bib-html-pub"></a>.</p>
+        <p>With the exception of figures, the main element shall be submitted as a single HTML document, as specified at <a href="#bib-ag-26"></a>.</p>
 
         <p>Images referenced in the main element shall use one of the following formats:</p>
 
@@ -387,7 +389,7 @@
     <section id="sec-packages-overview">
       <h3>Document Packages Overview</h3>
       <p>
-        Various document packages are needed during the development process. In all cases, a document being reviewed or voted upon shall be the current draft which is the “clean” version.
+        Various document packages are needed during the development process. In all cases, a document being reviewed or voted upon shall be the current draft which is the “clean” version, generated in zip file within the GitHub release as described in <a href="#bib-ag-26"></a>. All the below described packages are auto-generated by this tooling and shall not be created by hand.  
       </p>
       <p>
         In the event that any of the following is in conflict with the <a href="#bib-smpte-standards-operations-manual"></a>, the <a href="#bib-smpte-standards-operations-manual"></a> shall prevail.
@@ -397,7 +399,7 @@
     <section id="sec-working-draft">
       <h3>Working Draft Development</h3>
       <p>
-        <a href="#sec-style-and-form"></a> of this AG has guidance for the use of templates for new projects, Revisions and Amendments.
+        <a href="#sec-style-and-form"></a> of this AG has guidance for the use of templates for new projects and  Revisions.
       </p>
       <p>
         For Revisions the process of converting an old document into the current template changes section numbering and alters the appearance of the original document, even though the content of the document has not changed. In this case, it is recommended that the conversion to the current template should be made before any other changes are made. The document editor should “accept all changes” to create a clean starting point (the “baseline draft”) from which to track the technical and/or editorial revisions to the document.
@@ -424,9 +426,6 @@
         </li>
         <li>
           For a Revision, the Project Group should provide a markup from the published document (the baseline draft) in the template to be used for the revision project.
-        </li>
-        <li>
-          For an Amendment, the formal document is the list of changes to be made to the published document. A markup from the published document may be provided at the Project Group’s discretion.
         </li>
         <li>
           If the document has one or more Element(s), the Element(s) or instructions for acquiring the Element(s) shall be included.
@@ -469,10 +468,12 @@
         <li>
           If the document has one or more Element(s), the Element(s) or instructions for acquiring the Element(s) shall be included.
         </li>
-        <li>
-          A Comment Resolution Record is required. This should be the electronic comment resolution records kept on the SMPTE web site. In some situations the Project Group may wish to keep other records. See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
-        </li>
+        
       </ul>
+      <p>
+        A Comment Resolution Record is required when there are additional FCD Ballot(s). This should be the electronic comment resolution records kept on the SMPTE SKN Balloting App. In some situations the Project Group may wish to keep other records. See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
+      </p>
+
     </section>
 
     <section id="sec-fcd-comment">
@@ -496,10 +497,12 @@
         <li>
           If the document has one or more Element(s), the Element(s) or instructions for acquiring the Element(s) shall be included.
         </li>
-        <li>
-          A Comment Resolution Record is required. This should be the electronic comment resolution records kept on the SMPTE web site. In some situations the Project Group may wish to keep other records. See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
-        </li>
+        
       </ul>
+
+      <p>
+        A Comment Resolution Record is required. This should be the electronic comment resolution records kept on the SMPTE SKN Balloting App. In some situations the Project Group may wish to keep other records. See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
+      </p>
       <p>
         When Comment Resolution has been successfully completed, a Pre-DP Review follows. Comment resolution may include one or more Disposition Votes. See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
       </p>
@@ -523,10 +526,11 @@
         <li>
           If the document has one or more Element(s), the Element(s) or instructions for acquiring the Element(s) shall be included.
         </li>
-        <li>
-          A Comment Resolution Record is required. This should be the electronic comment resolution records kept on the SMPTE web site. In some situations the Project Group may wish to keep other records. See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
-        </li>
+        
       </ul>
+      <p>
+        A Comment Resolution Record is required. This should be the electronic comment resolution records kept on the SMPTE SKN Balloting App. In some situations the Project Group may wish to keep other records. See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
+      </p>
     </section>
 
     <section id="sec-dp-vote">
@@ -547,10 +551,11 @@
         <li>
           If the document has one or more Element(s), the Element(s) or instructions for acquiring the Element(s) shall be included.
         </li>
-        <li>
-          A Comment Resolution Record is required. This should be the electronic comment resolution records kept on the SMPTE web site. In some situations the Project Group may wish to keep other records. See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
-        </li>
+        
       </ul>
+      <p>
+        A Comment Resolution Record is required. This should be the electronic comment resolution records kept on the SMPTE SKN Balloting App. In some situations the Project Group may wish to keep other records. See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
+      </p>
       <p>
         After a successful DP vote the Draft Publication Vote Package documents shall not be edited by the Project Group participants or the Technology Committee Chair(s) with the exception of changing the document status. If new editorial issues are found, these should be documented and given to SMPTE HQ (see <a href="#sec-hq-edit"></a>).
       </p>
@@ -568,10 +573,11 @@
         <li>
           If the document has one or more Element(s), the Element(s) or instructions for acquiring the Element(s) shall be included.
         </li>
-        <li>
-          A Comment Resolution Record is required. This should be the electronic comment resolution records kept on the SMPTE web site. If the Project Group kept other records, these must be included. See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
-        </li>
+        
       </ul>
+      <p>
+        A Comment Resolution Record is required. This should be the electronic comment resolution records kept on the SMPTE SKN Balloting App. If the Project Group kept other records, these must be included. See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
+      </p>
     </section>
 
     <section id="sec-hq-edit">
@@ -585,6 +591,9 @@
         </li>
         <li>
           If the document has one or more Element(s), the Element(s) or instructions for acquiring the Element(s) shall be included.
+        </li>
+        <li>
+          A <code>manifest.json</code> file as defined in <a href="#bib-ag-28"></a>.
         </li>
         <li>
           Any original artwork, figures, drawings or similar material that will be needed to prepare the document and its elements for publication and long-term maintenance. These documents shall be in the formats described in <a href="#sec-formats-elements"></a> of this Administrative
@@ -612,8 +621,7 @@
 
   <section id="sec-bibliography">
     <ul>
-      <li><cite id="bib-smpte-ag-04">SMPTE AG-04</cite>, Engineering Document Templates
-        <a>https://www.smpte.org/about/policies-and-governance</a></li>
+      
       <li><cite id="bib-w3c-xml">W3C XML 1.0</cite> (latest edition)
         <a>https://www.w3.org/TR/xml/</a></li>
       <li><cite id="bib-iana">IANA</cite>
