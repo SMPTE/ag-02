@@ -125,20 +125,29 @@
       <section id="sec-main-element-formats">
         <h4>Main element</h4>
 
-        <p>With the exception of figures, the main element shall be submitted as a single HTML document, as specified at <a href="#bib-ag-26"></a>.</p>
+        <p>With the exception of figures, elements, or snippets, the main element shall be submitted as a single HTML document, as specified at <a href="#bib-ag-26"></a>.</p>
+      </section>
 
-        <p>Images referenced in the main element shall use one of the following formats:</p>
+      <section id="sec-figure-formats">
+        <h4>Figure element</h4>  
+
+        <p>Images referenced in the main element as a figure shall use the format <code>image/svg+xml</code>, as specified at <a
+          href="#bib-media-types"></a></p>
+
+      </section>
+      <section id="sec-legacy-image-formats">
+        <h4>Legacy images</h4>  
+
+        <p>For legacy documents, images not possible to be represented or reproduced as <code>image/svg+xml</code> referenced in the main element shall use one of the following formats:</p>
 
         <ul>
           <li><code>image/jpeg</code>, as specified at <a
-          href="#bib-media-types"></a></li>
-          <li><code>image/svg+xml</code>, as specified at <a
           href="#bib-media-types"></a></li>
           <li><code>image/png</code>, as specified at <a
           href="#bib-media-types"></a></li>
         </ul>
 
-        <p>An editable master shall be provided for each image in a format other
+        <p>Additionally, an editable master shall be provided for each image in a format other
         than <code>image/svg+xml</code>. The editable master shall be in one of
         the following formats:</p>
 
