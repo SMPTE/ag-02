@@ -8,7 +8,7 @@
   <meta itemprop="pubType" content="AG" />
   <meta itemprop="pubNumber" content="02" />
   <meta itemprop="pubState" content="pub" />
-  <meta itemprop="pubDateTime" content="2025-03-25" />
+  <meta itemprop="pubDateTime" content="2025-01-21" />
   <title>Document Naming and Packaging</title>
 </head>
 
@@ -46,7 +46,8 @@
       <li><cite id="bib-iso-directives-part2">ISO/IEC Directives, Part 2</cite>, Principles and rules for the structure and drafting of ISO and IEC documents 
         <a>https://www.iso.org/sites/directives/current/part2/index.xhtml</a></li>
       
-      <li><cite id="bib-iso-8601">ISO 8601</cite> (latest edition), Data elements and interchange formats — Information interchange — Representation of dates and times
+      <li><cite id="bib-iso-8601-1">ISO 8601-1</cite> (latest edition), Date and time — Representations for information interchange
+        <a>https://www.iso.org/standard/70907.html</a>
       </li>
       <li><cite id="bib-media-types">IANA Media Types</cite> <a>https://www.iana.org/assignments/media-types/media-types.xhtml</a>
       </li>
@@ -125,20 +126,29 @@
       <section id="sec-main-element-formats">
         <h4>Main element</h4>
 
-        <p>With the exception of figures, the main element shall be submitted as a single HTML document, as specified at <a href="#bib-ag-26"></a>.</p>
+        <p>With the exception of figures, elements, or snippets, the main element shall be submitted as a single HTML document, as specified at <a href="#bib-ag-26"></a>.</p>
+      </section>
 
-        <p>Images referenced in the main element shall use one of the following formats:</p>
+      <section id="sec-figure-formats">
+        <h4>Figure element</h4>  
+
+        <p>Images referenced in the main element as a figure shall use the format <code>image/svg+xml</code>, as specified at <a
+          href="#bib-media-types"></a></p>
+
+      </section>
+      <section id="sec-legacy-image-formats">
+        <h4>Legacy images</h4>  
+
+        <p>For legacy documents, images not possible to be represented or reproduced as <code>image/svg+xml</code> referenced in the main element shall use one of the following formats:</p>
 
         <ul>
           <li><code>image/jpeg</code>, as specified at <a
-          href="#bib-media-types"></a></li>
-          <li><code>image/svg+xml</code>, as specified at <a
           href="#bib-media-types"></a></li>
           <li><code>image/png</code>, as specified at <a
           href="#bib-media-types"></a></li>
         </ul>
 
-        <p>An editable master shall be provided for each image in a format other
+        <p>Additionally, an editable master shall be provided for each image in a format other
         than <code>image/svg+xml</code>. The editable master shall be in one of
         the following formats:</p>
 
@@ -186,7 +196,7 @@
   <section id="sec-dates">
     <h2>Dates</h2>
     <p>
-      In accordance with <a href="#bib-iso-8601"></a>, all dates shall be represented in the form <code>YYYY-MM-DD</code> as numeric digits (e.g. <code>2009-04-23</code> to indicate April 23, 2009).
+      In accordance with <a href="#bib-iso-8601-1"></a>, all dates shall be represented in the form <code>YYYY-MM-DD</code> as numeric digits (e.g. <code>2009-04-23</code> to indicate April 23, 2009).
     </p>
   </section>
 
@@ -251,7 +261,13 @@
         <h4>General</h4>
         <p>
           Closely related Engineering Documents may be created as Parts. A Part of a document is a separate Engineering Document and shall be shown to be related to other  
-          by using the same root document number plus a suffix of a hyphen and the Part number to distinguish among Parts (e.g. <code>1020-2:2009-04</code>, indicating document 1020, Part 2).
+          by using the same root document number plus a suffix of a hyphen and the Part number to distinguish among Parts (e.g. <code>1020-2:2009</code>, indicating document 1020, Part 2). 
+        </p>
+        <p>
+          Part numbers should be continuously ascending from document to document (e.g. <code>1020-1:2009</code>, <code>1020-2:2011</code>, <code>1020-3:2012</code>) unless part numbers are used to organize large sets of multi-part documents.
+        </p>
+        <p>
+          The Technology Committee Chair(s) shall assign document numbers in consultation with the document editor to ensure that the number is not being used in a document currently under development, and also with SMPTE HO to research thet the number has not been used in a previously published document. Part numbers may be assigned at the request of the document editor at any time after a Project is approved and shall be assigned before a Final Committee Draft ballot is issued.
         </p>
       </section>
 
@@ -629,9 +645,8 @@
         <a>https://www.w3.org/TR/2004/REC-xmlschema-1-20041028/</a></li>
       <li><cite id="bib-w3c-wsdl-11">W3C Web Services Description Language (WSDL) 1.1</cite>
         <a>https://www.w3.org/TR/2001/NOTE-wsdl-20010315</a></li>
-      <li><cite id="bib-xmi">XML Metadata Interchange (XMI)</cite>
-        <a>http://www.omg.org/spec/XMI/</a></li>
-      <li><cite id="bib-iso-80000-2">ISO 80000-2</cite> (latest edition), Quantities and units — Part 2: Mathematics</li>
+      <li><cite id="bib-iso-80000-2">ISO 80000-2</cite> (latest edition), Quantities and units — Part 2: Mathematics
+        <a>https://www.iso.org/standard/64973.html</a></li>
       <li><cite id="bib-dwg">DWG (AutoCAD Drawing) Format Family</cite>
       <a>https://www.loc.gov/preservation/digital/formats/fdd/fdd000445.shtml</a></li>
       <li><cite id="bib-vsd">Visio VSDX Drawing File Format</cite>
