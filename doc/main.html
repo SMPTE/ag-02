@@ -7,7 +7,7 @@
   <script type="module" src="../tooling/smpte.js"></script>
   <meta itemprop="pubType" content="AG" />
   <meta itemprop="pubNumber" content="02" />
-  <meta itemprop="pubState" content="pub" />
+  <meta itemprop="pubState" content="draft" />
   <meta itemprop="pubDateTime" content="2026-01-21" />
   <title>Document Naming and Packaging</title>
 </head>
@@ -198,6 +198,37 @@
     <p>
       In accordance with <a href="#bib-iso-8601-1"></a>, all dates shall be represented in the form <code>YYYY-MM-DD</code> as numeric digits (e.g. <code>2009-04-23</code> to indicate April 23, 2009).
     </p>
+    <p>
+      All approval dates referenced in this Administrative Guideline shall be recorded in this form, from the systems of record identified in <a href="#sec-approval-dates"></a>.
+    </p>
+  </section>
+
+  <section id="sec-approval-dates">
+    <h2>Approval Dates</h2>
+    <p>
+      The lifecycle of a SMPTE Engineering Document involves several approval-related dates. <a href="#table-approval-dates"></a> identifies each, the event it records, and the authoritative source. All such dates shall be recorded in the <code>YYYY-MM-DD</code> form defined in <a href="#sec-dates"></a>.
+    </p>
+    <table id="table-approval-dates">
+      <caption>Approval Dates</caption>
+      <thead>
+        <tr><th>Stage</th><th>Date recorded</th><th>Authoritative source</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>DG approval for TC review</td><td>DG approval date</td><td>DG record (tracked loosely)</td></tr>
+        <tr><td>Pre-Ballot Review period end</td><td>Review period actual end date</td><td>Ballot app — end date</td></tr>
+        <tr><td>Pre-Ballot comment resolution</td><td>Resolution completion date</td><td>GitHub PR — merge date</td></tr>
+        <tr><td>FCD, DP, or ST Audit ballot end</td><td>Ballot actual close date</td><td>Ballot app — end date</td></tr>
+        <tr><td>Ballot comment resolution</td><td>Resolution completion date</td><td>GitHub PR — merge date</td></tr>
+        <tr><td>Disposition vote (to set aside comment(s))</td><td>Vote date</td><td>Roster / voting app</td></tr>
+        <tr><td>Late comment resolution (any period; editorial issues, etc.)</td><td>Resolution completion date</td><td>GitHub PR — merge date; comments tracked in GitHub issue tracker</td></tr>
+      </tbody>
+    </table>
+    <p class="note">
+      Ballots are not extended except under extreme conditions; the actual close date prevails over any scheduled close.
+    </p>
+    <p>
+      The approval date used to identify the document version (see <a href="#sec-document-numbering-overview"></a>) and to populate the document metadata is the actual close date of the ST Audit ballot.
+    </p>
   </section>
 
   <section id="sec-document-numbering">
@@ -206,7 +237,7 @@
     <section id="sec-document-numbering-overview">
       <h3>Document Numbering Overview</h3>
       <p>
-        Document numbers shall be unique and uniform across all Engineering Document types. Versions of documents shall be identified by the year and month of their approval date, appended with a separating colon (e.g., for document #1020: <code>1020:2009-04</code> indicating approval in April, 2009). <a href="#figure-example-document-number"></a> shows an example of the document numbering structure. The approval date of a document indicates when it was last approved by its consensus body, e.g., Technical Committee. 
+        Document numbers shall be unique and uniform across all Engineering Document types. Versions of documents shall be identified by the year and month of their approval date, appended with a separating colon (e.g., for document #1020: <code>1020:2009-04</code> indicating approval in April, 2009). <a href="#figure-example-document-number"></a> shows an example of the document numbering structure. The approval date is the date of the final consensus action that produced the document, typically the actual close date of the ST Audit ballot; other approval-related dates used during the development lifecycle are defined in <a href="#sec-approval-dates"></a>.
       </p>
       <p>
         The Director of Engineering shall assign document numbers (or root document numbers, in the case of multipart documents). Document numbers may be assigned at the request of the Technology Committee Chair(s) at any time after a Project is approved and shall be assigned before a Final Committee Draft ballot is issued.
@@ -446,6 +477,9 @@
           If the document has one or more Element(s), the Element(s) or instructions for acquiring the Element(s) shall be included.
         </li>
       </ul>
+      <p>
+        See <a href="#sec-approval-dates"></a> for the date recorded with this package.
+      </p>
     </section>
 
     <section id="sec-fcd-ballot">
@@ -488,7 +522,9 @@
       <p>
         A Comment Resolution Record is required when there are additional FCD Ballot(s). This should be the electronic comment resolution records kept on the SMPTE SKN Balloting App. In some situations the Project Group may wish to keep other records. See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
       </p>
-
+      <p>
+        See <a href="#sec-approval-dates"></a> for the date recorded with this package.
+      </p>
     </section>
 
     <section id="sec-fcd-comment">
@@ -521,6 +557,9 @@
       <p>
         When Comment Resolution has been successfully completed, a Pre-DP Review follows. Comment resolution may include one or more Disposition Votes. See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
       </p>
+      <p>
+        See <a href="#sec-approval-dates"></a> for the date recorded with this package.
+      </p>
     </section>
 
     <section id="sec-pre-draft">
@@ -545,6 +584,9 @@
       </ul>
       <p>
         A Comment Resolution Record is required. This should be the electronic comment resolution records kept on the SMPTE SKN Balloting App. In some situations the Project Group may wish to keep other records. See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
+      </p>
+      <p>
+        See <a href="#sec-approval-dates"></a> for the date recorded with this package.
       </p>
     </section>
 
@@ -574,6 +616,9 @@
       <p>
         After a successful DP vote the Draft Publication Vote Package documents shall not be edited by the Project Group participants or the Technology Committee Chair(s) with the exception of changing the document status. If new editorial issues are found, these should be documented and given to SMPTE HQ (see <a href="#sec-hq-edit"></a>).
       </p>
+      <p>
+        See <a href="#sec-approval-dates"></a> for the date recorded with this package.
+      </p>
     </section>
 
     <section id="sec-st-audit">
@@ -592,6 +637,9 @@
       </ul>
       <p>
         A Comment Resolution Record is required. This should be the electronic comment resolution records kept on the SMPTE SKN Balloting App. If the Project Group kept other records, these must be included. See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
+      </p>
+      <p>
+        See <a href="#sec-approval-dates"></a> for the date recorded with this package.
       </p>
     </section>
 
