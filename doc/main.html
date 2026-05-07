@@ -46,7 +46,7 @@
       <li><cite id="bib-iso-directives-part2">ISO/IEC Directives, Part 2</cite>, Principles and rules for the structure and drafting of ISO and IEC documents 
         <a>https://www.iso.org/sites/directives/current/part2/index.xhtml</a></li>
       
-      <li><cite id="bib-iso-8601-1">ISO 8601-1</cite> (latest edition), Date and time — Representations for information interchange
+      <li><cite id="bib-iso-8601-1">ISO 8601-1</cite> (latest edition), Date and time - Representations for information interchange
         <a>https://www.iso.org/standard/70907.html</a>
       </li>
       <li><cite id="bib-media-types">IANA Media Types</cite> <a>https://www.iana.org/assignments/media-types/media-types.xhtml</a>
@@ -215,12 +215,12 @@
       </thead>
       <tbody>
         <tr><td>DG approval for TC review</td><td>DG approval date</td><td>DG record (tracked loosely)</td></tr>
-        <tr><td>Pre-Ballot Review period end</td><td>Review period actual end date</td><td>Ballot app — end date</td></tr>
-        <tr><td>Pre-Ballot comment resolution</td><td>Resolution completion date</td><td>GitHub PR — merge date</td></tr>
-        <tr><td>FCD, DP, or ST Audit ballot end</td><td>Ballot actual close date</td><td>Ballot app — end date</td></tr>
-        <tr><td>Ballot comment resolution</td><td>Resolution completion date</td><td>GitHub PR — merge date</td></tr>
+        <tr><td>Pre-Ballot Review period end</td><td>Review period actual end date</td><td>Ballot app - end date</td></tr>
+        <tr><td>Pre-Ballot comment resolution</td><td>Resolution completion date</td><td>GitHub PR - merge date</td></tr>
+        <tr><td>FCD, DP, or ST Audit ballot end</td><td>Ballot actual close date</td><td>Ballot app - end date</td></tr>
+        <tr><td>Ballot comment resolution</td><td>Resolution completion date</td><td>GitHub PR - merge date</td></tr>
         <tr><td>Disposition vote (to set aside comment(s))</td><td>Vote date</td><td>Roster / voting app</td></tr>
-        <tr><td>Late comment resolution (any period; editorial issues, etc.)</td><td>Resolution completion date</td><td>GitHub PR — merge date; comments tracked in GitHub issue tracker</td></tr>
+        <tr><td>Late comment resolution (any period; editorial issues, etc.)</td><td>Resolution completion date</td><td>GitHub PR - merge date; comments tracked in GitHub issue tracker</td></tr>
       </tbody>
     </table>
     <p class="note">
@@ -243,7 +243,7 @@
         The Director of Engineering shall assign document numbers (or root document numbers, in the case of multipart documents). Document numbers may be assigned at the request of the Technology Committee Chair(s) at any time after a Project is approved and shall be assigned before a Final Committee Draft ballot is issued.
       </p>
       <p>
-        Older Engineering Documents may bear one-, two-, or three-digit document numbers or root document numbers. These numbers shall not be prepended with leading zeroes when formatted for printing, either in the document itself or in citations in other documents. Such document numbers shall be prepended with leading zeroes to fill them out to four digits, however, when used as part of an element’s filename; the purpose is to facilitate sorting into numerical order.
+        Older Engineering Documents may bear one-, two-, or three-digit document numbers or root document numbers. These numbers shall not be prepended with leading zeroes when formatted for printing, either in the document itself or in citations in other documents. Such document numbers shall be prepended with leading zeroes to fill them out to four digits, however, when used as part of an element's filename; the purpose is to facilitate sorting into numerical order.
       </p>
 
       <figure id="figure-example-document-number">
@@ -256,7 +256,7 @@
     <section id="sec-document-type">
       <h3>Engineering Document Type</h3>
       <p>
-        The Type of Engineering Document (Standard, Recommended Practice or Engineering Guideline) shall be denoted by prepending a Type Designator, followed by a single space, to the document’s root number. The Type Designator shall be as follows:
+        The Type of Engineering Document (Standard, Recommended Practice or Engineering Guideline) shall be denoted by prepending a Type Designator, followed by a single space, to the document's root number. The Type Designator shall be as follows:
       </p>
 
       <dl>
@@ -305,14 +305,14 @@
       <section id="sec-different-types">
         <h4>Parts of Different Types</h4>
         <p>
-          A multipart set of documents may include Parts of different types of Engineering Documents, including Standards, Recommended Practices, and Engineering Guidelines. Each Part’s number shall include the appropriate document type designation (e.g. <code>RP 2046-2:2009-04</code>).
+          A multipart set of documents may include Parts of different types of Engineering Documents, including Standards, Recommended Practices, and Engineering Guidelines. Each Part's number shall include the appropriate document type designation (e.g. <code>RP 2046-2:2009-04</code>).
         </p>
       </section>
 
       <section id="sec-part-0-documents">
         <h4>Part 0 Documents</h4>
         <p>
-          A multipart set of documents should be supplemented by an informative Part 0, informally described as an “Overview Document,” which shall describe the relationships among the Parts and may describe the relationships of the Parts to other Engineering Documents. Part 0 documents are not due process Engineering Documents;
+          A multipart set of documents should be supplemented by an informative Part 0, informally described as an "Overview Document," which shall describe the relationships among the Parts and may describe the relationships of the Parts to other Engineering Documents. Part 0 documents are not due process Engineering Documents;
         </p>
         <P>
           Part 0 documents usually should be prepared by the authors of the related engineering documents in cooperation with SMPTE headquarters staff and the responsible Technology Committee and Project Group. Part 0 documents shall be maintained by the Director of Engineering in consultation with the Technology Committee Chair(s) and the author(s) of the Part 0 document. If new Parts are added to a multipart set, or if any of the Parts of the set are revised, Part 0 shall be revised at the same time. The Part 0 designation shall not be used for any Engineering Document. Part 0 documents shall not bear a Type designator (i.e. it is not an ST, RP or EG).
@@ -381,22 +381,22 @@
         File names for due process Engineering Documents should be constructed as follows.
       </p>
 <pre>
-&lt;group&gt; “-“ &lt;state&gt; “-“ &lt;type&gt; “-“ &lt;number&gt; [ “-“ &lt;part&gt; ] [ &lt;element&gt; ] “-“
-  &lt;description&gt; “-“ &lt;date&gt; [ “(“ &lt;note&gt; “)” ] “.” &lt;extension&gt;
+&lt;group&gt; "-" &lt;state&gt; "-" &lt;type&gt; "-" &lt;number&gt; [ "-" &lt;part&gt; ] [ &lt;element&gt; ] "-"
+  &lt;description&gt; "-" &lt;date&gt; [ "(" &lt;note&gt; ")" ] "." &lt;extension&gt;
 </pre>
       <p>
         Where:
       </p>
       <dl>
-        <dt><code>&lt;group&gt;</code></dt><dd>is the Group that authored the document (e.g., TC name, “31FS”)</dd>
-        <dt><code>&lt;state&gt;</code></dt><dd> is “WD” | “CD” | “FCD” | “DP”</dd>
-        <dt><code>&lt;type&gt;</code></dt><dd> is “ST” | “RP” | “EG” | “RDD” | “AN” | “ER” | “OV” | “AG” See <a href="#sec-document-type"></a></dd>
+        <dt><code>&lt;group&gt;</code></dt><dd>is the Group that authored the document (e.g., TC name, "31FS")</dd>
+        <dt><code>&lt;state&gt;</code></dt><dd> is "WD" | "CD" | "FCD" | "DP"</dd>
+        <dt><code>&lt;type&gt;</code></dt><dd> is "ST" | "RP" | "EG" | "RDD" | "AN" | "ER" | "OV" | "AG" See <a href="#sec-document-type"></a></dd>
         <dt><code>&lt;number&gt;</code></dt><dd> is the SMPTE HQ staff-assigned document number</dd>
         <dt><code>&lt;part&gt;</code></dt><dd> is the optional part number</dd>
         <dt><code>&lt;element&gt;</code></dt><dd> is the optional element letter</dd>
         <dt><code>&lt;description&gt;</code></dt><dd> is a brief indicator of subject, such as an abbreviated name of the document, which is constructed using only alpha characters, digits and "-". The description is a required element of the file name.</dd>
-        <dt><code>&lt;date&gt;</code></dt><dd> is the document version date, formatted (“YYYY-MM-DD”) as defined in <a href="#sec-dates"></a>.</dd>
-        <dt><code>&lt;note&gt;</code></dt><dd> is an optional string that can be used to annotate the file contents, e.g., “(clean),” “(markup),” “(package),” or similar information. The <code>&lt;note&gt;</code> shall be constructed using only alpha characters, digits, “-“.</dd>
+        <dt><code>&lt;date&gt;</code></dt><dd> is the document version date, formatted ("YYYY-MM-DD") as defined in <a href="#sec-dates"></a>.</dd>
+        <dt><code>&lt;note&gt;</code></dt><dd> is an optional string that can be used to annotate the file contents, e.g., "(clean)," "(markup)," "(package)," or similar information. The <code>&lt;note&gt;</code> shall be constructed using only alpha characters, digits, "-".</dd>
         <dt><code>&lt;extension&gt;</code></dt><dd> is an approved extension. See <a href="#sec-file-formats"></a></dd>
       </dl>
       <p class="note">
@@ -421,7 +421,7 @@
     <section id="sec-names-for-contributions">
       <h3>File Names for Contributions</h3>
       <p>
-        File names for contributions that are not Engineering Documents shall be at the discretion of the individual or group making the contribution. The scheme in <a href="#sec-due-process"></a> should be considered as a useful model. If these rules are used, the <code>&lt;state&gt;</code> should be “C.”
+        File names for contributions that are not Engineering Documents shall be at the discretion of the individual or group making the contribution. The scheme in <a href="#sec-due-process"></a> should be considered as a useful model. If these rules are used, the <code>&lt;state&gt;</code> should be "C."
       </p>
       <p>
         For a new project, the document number and even the project short name may not be known. In this event, individuals making the contributions should use their judgment when naming files.
@@ -435,7 +435,7 @@
     <section id="sec-packages-overview">
       <h3>Document Packages Overview</h3>
       <p>
-        Various document packages are needed during the development process. In all cases, a document being reviewed or voted upon shall be the current draft which is the “clean” version, generated in zip file within the GitHub release as described in <a href="#bib-ag-26"></a>. All the below described packages are auto-generated by this tooling and shall not be created by hand.  
+        Various document packages are needed during the development process. In all cases, a document being reviewed or voted upon shall be the current draft which is the "clean" version, generated in zip file within the GitHub release as described in <a href="#bib-ag-26"></a>. All the below described packages are auto-generated by this tooling and shall not be created by hand.  
       </p>
       <p>
         In the event that any of the following is in conflict with the <a href="#bib-smpte-standards-operations-manual"></a>, the <a href="#bib-smpte-standards-operations-manual"></a> shall prevail.
@@ -448,20 +448,20 @@
         <a href="#sec-style-and-form"></a> of this AG has guidance for the use of templates for new projects and  Revisions.
       </p>
       <p>
-        For Revisions the process of converting an old document into the current template changes section numbering and alters the appearance of the original document, even though the content of the document has not changed. In this case, it is recommended that the conversion to the current template should be made before any other changes are made. The document editor should “accept all changes” to create a clean starting point (the “baseline draft”) from which to track the technical and/or editorial revisions to the document.
+        For Revisions the process of converting an old document into the current template changes section numbering and alters the appearance of the original document, even though the content of the document has not changed. In this case, it is recommended that the conversion to the current template should be made before any other changes are made. The document editor should "accept all changes" to create a clean starting point (the "baseline draft") from which to track the technical and/or editorial revisions to the document.
       </p>
       <p>
         During Working Draft development (an informal process), a Project Group may provide intermediate draft documents and markups for review within the Project Group.  Intermediate document packages may include an informal Comment Resolution Record or a Comment Resolution Document.
       </p>
       <p>
-        The state of these draft documents shall be “WD.” Project Groups should follow the recommendations and styles given in this Administrative Guideline for file names.
+        The state of these draft documents shall be "WD." Project Groups should follow the recommendations and styles given in this Administrative Guideline for file names.
       </p>
     </section>
 
     <section id="sec-pre-fcd-ballot">
       <h3>Pre-Ballot Review Document Package</h3>
       <p>
-        The first step in the formal document process is the preparation of a Working Draft, which shall be marked as “WD.”  This document a package is provided by the Project Group to the Technology Committee Chair(s). This review is optional; See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
+        The first step in the formal document process is the preparation of a Working Draft, which shall be marked as "WD."  This document a package is provided by the Project Group to the Technology Committee Chair(s). This review is optional; See <a href="#bib-smpte-standards-operations-manual"></a> for guidance.
       </p>
       <p>
         The document package shall contain a clean draft. In addition it may contain one of the following:
@@ -485,11 +485,11 @@
     <section id="sec-fcd-ballot">
       <h3>Final Committee Draft Ballot Document Package</h3>
       <p>
-        Following Pre-Ballot Review, a Project Group should address all comments. See the comment resolution process in <a href="#bib-smpte-standards-operations-manual"></a>. When the Project Group agrees that the document is ready for ballot, it shall provide a Committee Draft ballot package marked as “CD” to the Technology Committee Chairs(s) that contains:
+        Following Pre-Ballot Review, a Project Group should address all comments. See the comment resolution process in <a href="#bib-smpte-standards-operations-manual"></a>. When the Project Group agrees that the document is ready for ballot, it shall provide a Committee Draft ballot package marked as "CD" to the Technology Committee Chairs(s) that contains:
       </p>
       <ul>
         <li>
-          A clean version of the Committee Draft document marked as “CD.”
+          A clean version of the Committee Draft document marked as "CD."
         </li>
         <li>
           For a new Engineering Document, a markup from the Pre-Ballot Review draft should be included if any changes have been made.
@@ -506,7 +506,7 @@
       </p>
       <ul>
         <li>
-          A clean version of the Committee Draft document marked as “CD.”
+          A clean version of the Committee Draft document marked as "CD."
         </li>
         <li>
           A markup from the previous ballot may be included.
@@ -537,7 +537,7 @@
       </p>
       <ul>
         <li>
-          A clean version of the draft document. If the ballot passed, this shall be marked as “FCD.” If the ballot failed, this shall be marked as “CD.”
+          A clean version of the draft document. If the ballot passed, this shall be marked as "FCD." If the ballot failed, this shall be marked as "CD."
         </li>
         <li>
           A markup from the ballot document should be provided.
@@ -569,7 +569,7 @@
       </p>
       <ul>
         <li>
-          A clean version of the current Final Committee Draft document marked as “FCD.”
+          A clean version of the current Final Committee Draft document marked as "FCD."
         </li>
         <li>
           A markup from the Final Committee Draft ballot document.
@@ -597,7 +597,7 @@
       </p>
       <ul>
         <li>
-          A clean version of the current Final Committee Draft document marked as “FCD.”
+          A clean version of the current Final Committee Draft document marked as "FCD."
         </li>
         <li>
           If changes were made as a result of the Pre-DP review, markup showing these changes shall be provided.
@@ -628,7 +628,7 @@
       </p>
       <ul>
         <li>
-          A clean version of the document marked as “DP.”
+          A clean version of the document marked as "DP."
         </li>
         <li>
           If the document has one or more Element(s), the Element(s) or instructions for acquiring the Element(s) shall be included.
@@ -693,7 +693,7 @@
         <a>https://www.w3.org/TR/2004/REC-xmlschema-1-20041028/</a></li>
       <li><cite id="bib-w3c-wsdl-11">W3C Web Services Description Language (WSDL) 1.1</cite>
         <a>https://www.w3.org/TR/2001/NOTE-wsdl-20010315</a></li>
-      <li><cite id="bib-iso-80000-2">ISO 80000-2</cite> (latest edition), Quantities and units — Part 2: Mathematics
+      <li><cite id="bib-iso-80000-2">ISO 80000-2</cite> (latest edition), Quantities and units - Part 2: Mathematics
         <a>https://www.iso.org/standard/64973.html</a></li>
       <li><cite id="bib-dwg">DWG (AutoCAD Drawing) Format Family</cite>
       <a>https://www.loc.gov/preservation/digital/formats/fdd/fdd000445.shtml</a></li>
